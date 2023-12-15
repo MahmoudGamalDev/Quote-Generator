@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quote of the Day</h1>
+        <div class="wrapper">
+            <q></q>
+            <span></span>
+        </div>
+        <button onclick="generateQuote()">New Quote</button>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-size: cover;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-image: url('./overlay-bg.jpg');
+    }
+
+    .container {
+        width: 65%;
+        padding-top: 100px;
+        margin: auto;
+        text-align: center;
+        height: 100vh;
+
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 40px;
+    }
+
+    .wrapper {
+        padding: 15px 30px;
+        background-color: rgba(240, 248, 248, 0.6);
+        border-radius: 10px;
+        height: 170px;
+        position: relative;
+    }
+
+    q {
+        font-size: 1.8rem;
+        font-style: italic;
+    }
+
+    span {
+        display: block;
+        font-size: 1.8rem;
+        margin: 10px 0;
+        color: #2d2c4b;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    button {
+        padding: 10px 20px;
+        margin-top: 30px;
+        background-color: rgb(247, 213, 150);
+        border: none;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(246, 205, 128);
+        transition: all 0.4s;
+    }
+</style>
+
+</html>
